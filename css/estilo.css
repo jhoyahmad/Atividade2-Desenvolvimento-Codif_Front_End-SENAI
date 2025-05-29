@@ -1,0 +1,107 @@
+/*cabeçalho*/
+header img {
+    height: 70px;
+    width: 70px;
+}
+
+/*Conteúdo principal*/
+main {
+    min-height: 500px;
+}
+
+/*Aqui na #section-banners do CSS, será organizado as imagens da página web */
+/* Em bootstrap exite uma class chamada: container que serve para ajustar o conteúdo da sessão do site, já: fluid ajusta automaticamente a imagem ao tamanho da tela */
+/* O container-fluid: use-o em cada sessão para ajustar os elementos*/
+
+/*Banners - Todas as imagens dentro da #section-banners terão o mesmo tamanho, ou seja, 500-x*/
+#section-banners img {
+    height: 500px;
+}
+
+/*Fez-se o Carousel dos produtos a serem vendidos */
+/* Agora será feito o CSS dos produtos vendidos */
+
+/* Aqui inicará as sessões dos produtos vendidos */
+
+/*Produtos vendidos*/
+
+/* Aqui todos os textos da #section-vendidos ficarão centralizados */
+#section-vendidos {
+    text-align: center;
+}
+/* Aqui na #section-vendidos os textos dentro de h2 ficarão em negrido, no caso será modificando o texto: "OS MAIS VENDIDOS" no arquivo index.html */
+#section-vendidos  h2{
+    font-weight: bold;
+    padding: 20px;
+}
+/* Aqui serão configuradas as imagens que estão em #section-vendidos img*/
+#section-vendidos img {
+    height: 300px;
+    border-radius: 10px; /* Deixa os cards com as bordas arredondadas*/
+}
+
+/*Usa-se o ponto para chamar classe no CSS, aqui o .card está chamando a classe card do arquivo index.html*/
+
+/* Aqui a #section-banners .card estilizará toda a div dos elementos a serem vendidos que estão em "OS MAIS VENDIDOS" no arquio index.html */
+#section-banners .card {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;  /* Deixa os cards com as bordas arredondadas*/
+}
+}
+/*Aqui a #section-banners .preco irá estilizar os elementos da classe preco no arquivo index.html */
+#section-banners .preco {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-weight: bold;
+    padding: 10px;
+}
+
+/*PARTE JAVASCRIPT*/
+
+/*Botão Voltar Topo*/
+
+/* Aqui definiu-se a organização do botão: voltar ao topo. O top:0 e o left:0 do script.js irão substituir o bottom: 5px e do right: 50px no estilo.css*/
+#voltar-topo{
+    position: fixed;
+    bottom: 5px;
+    right: 50px;
+}
+
+/* Página de Login  */
+
+/* Aqui será feito toda a estilização da parte do login */
+/* Aqui irá-se à #section-login e definirá que ele terá um margim-top de 100px de cima para baixo, ele chegará na #section-login na parte do main do arquivo login.html ou no header e irá criar um espaçamento no main de 100px de cima para baixo */
+#section-login {
+    margin-top: 100px;
+}
+/* Aqui na #section-login h1 ele irá centralizar o texto da estrutura do login*/
+#section-login  h1 {
+    text-align: center;
+}
+/* Aqui todos os inputs da #section-login ficar[a com largura de 100%, ou seja, ele irá ocupar todo o tamanho de tela que aparecerá no dispositivo e organizará a parte do login no centro da tela*/
+#section-login input {
+    width: ;: 100%;
+}
+
+/* Formulário de cadastro*/
+
+/* Aqui irá centralizar, estilizar e organizar a parte da #section-cadastro e do #form-cadastrar da página de login.html */
+#section-cadastro{
+        padding: 5px;
+        text-align: center;
+        background-color: #fff; /*Fundo branco*/
+}
+#form-cadastrar {
+    padding: 5px;
+    display: none; /* Teste com block ao invés de none para ver o que acontece - não aparece a parte de criar cadastro na página de login. Tem-se que fazer a parte do JS para funcionar*/
+}  /*Com isso acabou a parte de CSS, ou seja, a estilizaão do formulário e irá fazer-se a parte de JavaScript*/

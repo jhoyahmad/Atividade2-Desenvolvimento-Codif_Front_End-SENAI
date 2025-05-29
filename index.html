@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>LH Games</title>
+
+   <!--Aqui é a parte do Framework Bootstrap e CSS - "css/estilo.css" -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+
+   <!-- Aqui na tag header ficará os Menus de navegação, Logotipos, Títulos, etc.-->
+  <header>
+  <!-- Criar os Menus - ir ao site https://www.getboostrap.com - Componentes - navbar - copiar código e colar em header no body-->
+  <!--Após copiar e colar o código, agora substitui-se os valores-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!--Aqui troca-se o navbar por "img/logo.png" e no href digita-se "index.html" -->
+        <a class="navbar-brand" href="index.html"> <img src = "img/logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <!--Aqui troca-se o Home por Promoções-->
+              <a class="nav-link active" aria-current="page" href="#">Promoções</a>
+            </li>
+            <li class="nav-item">
+              <!--Aqui troca-se o Link por Console-->
+              <a class="nav-link" href="#">Console</a>
+            </li>
+            <li class="nav-item">
+               <!--Aqui replica-se a estrutura do Link e troca-o por Jogos-->
+              <a class="nav-link" href="#">Jogos</a>
+            </li>
+            <li class="nav-item">
+               <!--Aqui replica-se a estrutura do Link e troca-o por Login; No href digita-se "login.html"-->
+              <a class="nav-link" href="login.html">>>Login<<</a>
+            </li>
+            <!-- Aqui apagau-se as estruturas de Dropdown e Desabled --> 
+          </ul>
+          <form class="d-flex" role="search">
+             <!--Aqui no placeholder troca-se Search por: o que deseja buscar? - Esse texto aparecerá no formulário em buscar-->
+            <input class="form-control me-2" type="search" placeholder="O que deseja buscar?" aria-label="Search"/>
+             <!--Aqui troca-se o Search por Buscar -->
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+  </nav>
+
+  </header>
+
+  <!-- Aqui no main ficará os banners, a #section-vendidos e Cards-->
+  <main>
+
+      <!-- No Bootstrap existe uma classe chamada: container que serve para ajustar o conteúdo da sessção do site e fluid ajusta automaticamento a imagem ao tamanho da tela-->
+      <!-- /* O container-fluid deixa o site responsivo, use-o em cada sessão --> 
+      <section id="section-banners" class="container-fluid"> <!--"contaeiner-fluid" irá ajustar os elementos na página web-->
+
+        <!-- Criar os Bannerer - ir ao site https://www.getboostrap.com - Componentes - Carousel - Second Slide- Copiar Código e Colar em section banners no Main-->
+        <!--Após copiar e colar o código, substitui-se os valores, ou seja, adiciona-se as imagens e as descrições que aparecerão caso dê algum problema nas imagens-->
+        <!--Agora para organizar as imagens da página web tem-se que mexer no CSS-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <!--Aqui adiciona-se a imagem: banner1 e a descrição: "Venha comprar em nossa loja!" -->
+                      <img src="img/banner1.PNG" class="d-block w-100" alt="Venha comprar em nossa loja!">
+                    </div>
+                    <div class="carousel-item">
+                        <!--Aqui adiciona-se a imagem: banner2 e a descrição:"Promoção de produtos"-->
+                        <img src="img/banner2.PNG" class="d-block w-100" alt="Promoção de produtos">
+                    </div>
+                    <div class="carousel-item">
+                        <!--Aqui adiciona-se a imagem: banner3 e a descrição: "Várias novidades de produtos"-->
+                        <img src="img/banner3.PNG" class="d-block w-100" alt="Várias novidades de produtos">
+                    </div>
+            </div>
+                <!--Aqui ficará a estrutura dos efeitos de transição das imagens: banners slide/carousel-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+
+        <!-- Criar os Cards - ir ao site https://www.getboostrap.com - Componentes - Card - Firest Slide- Copiar Código e Colar na section "Os mais vendidos" no Main-->
+        <!-- Aqui cria-se os cards da sessão vendidos-->
+      </section>
+
+    <section id="section-vendidos" class="container-fluid"> <!--A class="container-fluid" ajustará os elementos na página web-->
+
+              <h2>OS MAIS VENDIDOS</h2>
+        <!-- Aqui todos os elementos estarão dentro da div class = "card-group" -->
+        <div class="card-group"> <!-- card-group organiza os elementos um ao lado do outro - AQUI TERMINOU A PARTE HTML E VAMOS PARA A PARTE DO JS DO LOGIN.HTML -->
+                 <div class="card" style="width: 18rem;">
+                      <!--Aqui adiciona-se a imagem: jogo1.png e a descrição: "Jogo de aventura"-->
+                      <img src="img/jogo1.PNG" class="card-img-top" alt="Jogos de aventura">
+                        <div class="card-body">
+                              <!-- Aqui trocou-se o Card title por Jogo1 -->
+                              <h5 class="card-title">Jogo 1</h5>
+                              <!-- Aqui trocou-se o Card text o some quick exemple text to build on the card title... Por "Jogo do ano"-->
+                              <p class="card-text">Jogo do ano</p>
+                              <!-- Aqui replicou-se a estrutura do card-text e trocou-se o Card text por "preco" e Some quick exemple text to build... por R$ 190,00 -->
+                              <p class="Preco">R$ 190,00</p>
+                              <!--Aqui trocou-se Go somowhere por Comprar-->
+                              <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+
+                    <!-- Aqui replicou-se o código e fez-se as alterações do novo card -->
+                    <div class="card" style="width: 18rem;">
+                          <img src="img/jogo2.PNG" class="card-img-top" alt="Jogo de corrida">
+                          <div class="card-body">
+                              <h5 class="card-title">Jogo 2</h5>
+                              <p class="card-text">Jogo top de linha</p>
+                              <p class="Preco">R$ 290,00</p>
+                              <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                    </div> 
+                    <!-- Aqui replicou-se o código e fez-se as alterações do novo card-->
+                    <div class="card" style="width: 18rem;">
+                          <img src="img/jogo3.PNG" class="card-img-top" alt="Jogo melhor de todos">
+                          <div class="card-body">
+                                <h5 class="card-title">Jogo 3</h5>
+                                <p class="card-text">Jogo melhor de todos</p>
+                                <p class="Preco">R$ 390,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                    </div>  
+         </div>  
+    </section>
+
+  </main>
+
+  <!-- Aqui no rodapé ficará  a frase: Desenvolvido por LA Games-->
+  <footer>
+    <p> Desenvolvido por LA Games</p>
+  </footer>
+
+  <!--Aqui ao clicar no botão: voltar ao topo será acionado a function topo do script.js-->
+  <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
+  
+  <!--Aqui é a parte do Bootstrap do js/script.js-->
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
